@@ -39,7 +39,8 @@
             @endforeach
         </tbody>
     </table>
-@else
+    {{ $genres->links() }}  {{-- for genres/index.blade.php --}}
+    @else
     <p>No genres found.</p>
 @endif
 @endsection

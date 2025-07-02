@@ -44,8 +44,10 @@
                     </tr>
                 @endforeach
             </tbody>
-        </table>
+            </table>
+        {{ $books->links() }}
     @else
         <p>No books found.</p>
     @endif
+
 @endsection

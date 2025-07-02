@@ -39,6 +39,9 @@
                 @endforeach
             </tbody>
         </table>
+
+        {{ $authors->links() }}  {{-- for authors/index.blade.php --}}
+
     @else
         <p>No authors found.</p>
     @endif
